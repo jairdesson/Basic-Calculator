@@ -1,0 +1,463 @@
+object Form_Main: TForm_Main
+  Left = 0
+  Top = 0
+  Caption = 'Calculadora B'#225'sica'
+  ClientHeight = 692
+  ClientWidth = 382
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel_Main: TPanel
+    Align = Contents
+    Size.Width = 382.000000000000000000
+    Size.Height = 692.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Panel_Header: TPanel
+      Align = MostTop
+      Size.Width = 382.000000000000000000
+      Size.Height = 120.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Rectangle_HeaderDisplay: TRectangle
+        Align = Contents
+        Fill.Color = claWhite
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 362.000000000000000000
+        Size.Height = 100.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object Edit_Display: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Contents
+          TabOrder = 0
+          ReadOnly = True
+          TextSettings.Font.Size = 48.000000000000000000
+          TextSettings.HorzAlign = Trailing
+          Size.Width = 362.000000000000000000
+          Size.Height = 100.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Family, Style, FontColor]
+        end
+      end
+    end
+    object Panel_Buttons: TPanel
+      Align = Client
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 362.000000000000000000
+      Size.Height = 552.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Rectangle_Buttons: TRectangle
+        Align = Client
+        Fill.Color = claWhite
+        Size.Width = 362.000000000000000000
+        Size.Height = 552.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        object FlowLayout_Buttons: TFlowLayout
+          Align = Contents
+          Size.Width = 362.000000000000000000
+          Size.Height = 552.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Justify = Left
+          JustifyLastLine = Left
+          FlowDirection = LeftToRight
+          object Button_Percent: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 23
+            Text = '%'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_ClearEveryThings: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 95.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'CE'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+            OnClick = Button_ClearEveryThingsClick
+          end
+          object Button_Clear: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 185.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'C'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_Delete: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 275.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = '<='
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_UnderX: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 95.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 22
+            Text = #185'/x'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_XElevate: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 95.000000000000000000
+            Position.Y = 95.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 21
+            Text = 'x'#178
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button3: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 185.000000000000000000
+            Position.Y = 95.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 20
+            Text = #178'Sqt'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_Divide: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 275.000000000000000000
+            Position.Y = 95.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 19
+            Text = #247
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_7: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 185.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 18
+            Text = '7'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_8: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 95.000000000000000000
+            Position.Y = 185.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 17
+            Text = '8'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_9: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 185.000000000000000000
+            Position.Y = 185.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 16
+            Text = '9'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_Multiply: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 275.000000000000000000
+            Position.Y = 185.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 15
+            Text = 'X'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_4: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 275.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 14
+            Text = '4'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_5: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 95.000000000000000000
+            Position.Y = 275.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 13
+            Text = '5'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_6: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 185.000000000000000000
+            Position.Y = 275.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 12
+            Text = '6'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_Minus: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 275.000000000000000000
+            Position.Y = 275.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 11
+            Text = '-'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_1: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 365.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 10
+            Text = '1'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_2: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 95.000000000000000000
+            Position.Y = 365.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            Text = '2'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_3: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 185.000000000000000000
+            Position.Y = 365.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 8
+            Text = '3'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_Plus: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 275.000000000000000000
+            Position.Y = 365.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            Text = '+'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_PlusMinus: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 455.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            Text = #31'+/_'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_0: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 95.000000000000000000
+            Position.Y = 455.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            Text = '0'
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_Virgula: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 185.000000000000000000
+            Position.Y = 455.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = ','
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+          object Button_Resultado: TButton
+            StyledSettings = [Family, Style, FontColor]
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 275.000000000000000000
+            Position.Y = 455.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 80.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = '='
+            TextSettings.Font.Size = 18.000000000000000000
+            TextSettings.Trimming = None
+          end
+        end
+      end
+    end
+  end
+end
